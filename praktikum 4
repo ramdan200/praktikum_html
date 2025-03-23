@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas pertemuan 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .box {
+            display: flex;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+        }
+        .blue-box {
+            background-color: lightblue;
+        }
+        .green-box {
+            background-color: lightgreen;
+        }
+        .box img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 0 20px;
+        }
+        h2 {
+            margin: 0;
+            text-decoration: underline;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p { font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .kiri {float: left;}
+        .kanan {float: right;
+               }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box blue-box">
+    <img class="kiri" src="https://pngimg.com/uploads/engine/engine_PNG65.png" >
+            <div class="content">
+                <h2><b>Artikel pertama</b></h2>
+                <p>Engine adalah komponen utama yang berfungsi mengubah energi dari bahan bakar menjadi tenaga mekanis. Dalam dunia otomotif, engine berfungsi membakar campuran udara dan bahan bakar di dalam silinder. Nantinya, proses ini dapat menciptakan energi yang digunakan untuk mendorong piston menggerakkan poros engkol dan roda kendaraan.Proses ini melibatkan berbagai komponen seperti piston, silinder, dan katup yang bekerja bersama untuk mendorong kendaraan maju. Berkat berbagai inovasi teknologi yang dihadirkan, engine kini bekerja lebih efisien dan menciptakan kendaraan yang ramah lingkungan.</p>
+            </div>
+        </div>
+        <div class="box green-box">
+            <div class="content">
+                <h2><b>Artikel kedua</b></h2>
+                <p>Sistem transmisi adalah bagian mesin mobil yang digunakan untuk menyalurkan tenaga mesin ke roda penggerak. Tugas sistem ini untuk mengubah kecepatan dan tenaga putar. Tenaga yang dihasilkan oleh mesin akan dipindahkan oleh sistem ke diferensial.
+
+                    Ada beberapa fungsi transmisi dalam pengoperasian mobil, yaitu untuk meneruskan tenaga yang dihasilkan mesin dari kopling ke poros propeller, menciptakan momen yang dihasilkan mesin sesuai dengan kebutuhan, membuat kendaraan berjalan mundur, dan memungkinkan kendaraan berhenti meskipun mesin masih menyala.</p>
+            <img class="kanan" src="https://www.transmissionrepaircostguide.com/wp-content/uploads/2015/04/automatic-transmission.jpg">
+        </div>
+    </div>
+</body>
+</html>
+
