@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Daily Journal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Light Theme */
+    body.light {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    body.light .navbar {
+      background-color: #f8f8f8;
+      color: #000000;
+    }
+
+    body.light .hero {
+      background-color: #6b7280;
+      color: white;
+    }
+
+    /* Dark Theme */
+    body.dark {
+      background-color: #121212;
+      color: #eeeeee;
+    }
+
+    body.dark .navbar {
+      background-color: #1f1f1f;
+      color: #ffffff;
+    }
+
+    body.dark .hero {
+      background-color: #374151;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+
+    .menu a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .theme-toggle {
+      background: transparent;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .hero-text p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .hero-image img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-image {
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body class="light">
+  <nav class="navbar">
+    <div class="logo">My Daily Journal</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Article</a>
+      <a href="#">Gallery</a>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-text">
+      <h1>Create Memories, Save Memories, Everyday</h1>
+      <p>Mencatat semua kegiatan sehari-hari yang ada tanpa terkecuali</p>
+      <small>6/10/2023 10:46:1</small>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1604671801903-03ef9b539c6e" alt="Memories">
+    </div>
+  </main>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const icon = document.getElementById("theme-icon");
+
+      if (body.classList.contains("light")) {
+        body.classList.remove("light");
+        body.classList.add("dark");
+        icon.textContent = "☀️";
+      } else {
+        body.classList.remove("dark");
+        body.classList.add("light");
+        icon.textContent = "🌙";
+      }
+    }
+  </script>
+</body>
+</html>
